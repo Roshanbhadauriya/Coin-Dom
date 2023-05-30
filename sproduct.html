@@ -1,25 +1,289 @@
-<!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tech2etc Ecommerce Tutorial</title>
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/11657db73a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-        <link rel="stylesheet" href="style.css">
-    </head>
+<body>
+    <header id="header">
+        <a href="/index.html"><img src="images/coin-dom-logo-zip-file/png/logo-no-background.png" class="logo"
+                alt="coin-dom logo"></a>
+        <nav>
 
-    <body>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li id="lg-bag"><a href="cart.html"><img src="images/icons8-shopping-bag-48.png"
+                            class="shopping-cart"></a></li>
+
+                <a href="#" id="close"> <i class="far fa-times"></i></a>
 
 
-        <script>
-            // script for image change on click
-        </script>
+            </ul>
+        </nav>
+
+        <nav id="mobile">
+
+            <a href="cart.html"><img src="images/icons8-shopping-bag-48.png" class="shopping-cart"></a>
+
+            <i id="bar" class="fas fa-outdent"></i>
+
+        </nav>
 
 
-        <script src="script.js"></script>
-    </body>
+    </header>
+    <div id="coinss">
+    <i class="fas fa-coin" style="color: yellow;">
+    </i>
+        <p id="coins"></p>
+    </div>
+    <section class="section-p1" id="prodetails">
+        <div class="single-pro-image">
+            <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/products/f1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f2.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f3.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f4.jpg" width="100%" class="small-img" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Home / T-shirts</h6>
+            <h4>men's fashion / T-shirts</h4>
+            <h2> $132.00</h2>
+            <select>
+                <option value="">XXL</option>
+                <option value="">Xl</option>
+                <option value="">small</option>
+                <option value="">medium</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal" id="subtractButton">Buy</button>
+            <h4>Product details</h4>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis beatae aperiam libero perspiciatis
+                iste, possimus illo enim minus eriam libero perspiciatis iste, possimus illo enim minrepellendus
+                temporibus animi. Natus, fugiat ut libero ullam dolores ab architecto placeat nobis eaque.</span>
+        </div>
+
+    </section>
+
+
+
+    <section id="feature-products" class="section-p1">
+
+        <div class="product-container">
+            <div class="product-card">
+                <img src="img/products/n1.jpg" alt="adidas t-shirt" loading="lazy">
+                <div class="product-info">
+                    <span>Adidas</span>
+                    <h5>Cartoon Astronout T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4><i class="fas fa-coin">
+                        </i>2</h4>
+
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+
+            </div>
+
+            <div class="product-card">
+                <img src="img/products/n2.jpg" alt="adidas t-shirt" loading="lazy">
+                <div class="product-info">
+                    <span>Adidas</span>
+                    <h5>Cartoon Asyronout T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4><i class="fas fa-coin">
+                        </i>2</h4>
+
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+
+            </div>
+
+            <div class="product-card">
+                <img src="img/products/n3.jpg" alt="adidas t-shirt" loading="lazy">
+                <div class="product-info">
+                    <span>Adidas</span>
+                    <h5>Cartoon Asyronout T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4><i class="fas fa-coin">
+                        </i>2</h4>
+
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+
+            </div>
+
+
+
+            <div class="product-card">
+                <img src="img/products/n8.jpg" alt="adidas t-shirt" loading="lazy">
+                <div class="product-info">
+                    <span>Adidas</span>
+                    <h5>Cartoon Asyronout T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4<i class="fas fa-coin">
+                        </i>4</h4>
+
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="images/coin-dom-logo-zip-file/png/logo-no-background.png" class="logo f-logo"
+                alt="Coin-Dom logo ">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>Indore</p>
+            <p><strong>Hours: </strong>10:00 - 23:00, Mon-Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Accountt</h4>
+            <a href="#">Sign Up</a>
+            <a href="#">View Cart </a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track my order</a>
+            <a href="#">help </a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg">
+                <img src="img/pay/play.jpg">
+            </div>
+            <p>Secured Payment Gateways </p>
+            <img src="img/pay/pay.png">
+
+        </div>
+
+        <div class="copyright">
+            <p>All Copyright reserved©</p>
+        </div>
+
+
+    </footer>
+
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+
+        smallimg[0].onclick = function () {
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function () {
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function () {
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function () {
+            MainImg.src = smallimg[3].src;
+        }
+
+        // Check if the paragraph value is stored in the local storage
+if (!localStorage.getItem('coins')) {
+    // If not, set the initial value to 1000
+    localStorage.setItem('coins', 1000);
+  }
+  
+  // Get the paragraph element and the subtract button element
+  const coinsParagraph = document.getElementById('coins');
+  const subtractButton = document.getElementById('subtractButton');
+  
+  // Update the paragraph text with the stored value from local storage
+  coinsParagraph.textContent = localStorage.getItem('coins');
+  
+  // Add an event listener to the subtract button
+  subtractButton.addEventListener('click', function() {
+    // Get the current value from the paragraph
+    let currentValue = parseInt(coinsParagraph.textContent);
+  
+    // Subtract 1 from the current value
+    currentValue--;
+  
+    // Update the paragraph text with the new value
+    coinsParagraph.textContent = currentValue;
+  
+    // Store the new value in the local storage
+    localStorage.setItem('coins', currentValue);
+  });
+    </script>
+<script src="script.js"></script>
+</body>
 
 </html>
