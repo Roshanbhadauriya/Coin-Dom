@@ -1,17 +1,14 @@
 
 /* coins */
 #coins-product{
-  position: fixed;
-  top: 0px;
-  right: 0px;
+  width: 75px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  z-index: 999;
   font-size: 22px;
   padding: 10px 15px;
-  background-color: skyblue;
 }
+
 #coins-product p{
  position: relative;
  top: 4.4px;
@@ -63,18 +60,21 @@
 }
 
 #prodetails .single-pro-details input {
-  width: 10%;
   height: 47px;
   padding-left: 10px;
   font-size:  16px;
   margin-right: 10px ;
+  max-width: 10%;
+  min-width: 4px;
 }
+
 #prodetails .single-pro-details button{
   background-color: #088178;
   color: #fff;
 }
 #prodetails .single-pro-details input :focus{
   outline: none;
+
 }
 #prodetails .single-pro-details span{
   line-height: 25px;

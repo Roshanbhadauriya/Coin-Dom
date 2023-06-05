@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coin-dom</title>
+    <title>Coins-dormintry</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="global.css">
+    <style>
+        .loginn:active{
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,23 +22,22 @@
     <header id="header">
         <a href="/index.html"><img src="images/coin-dom-logo-zip-file/png/logo-no-background.png" class="logo"
                 alt="coin-dom logo"></a>
-        <nav>
-
-            <ul id="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a  href="shop.html">Shop</a></li>
-                <li><a class="active" href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li id="lg-bag"><a href="cart.html"><img src="images/icons8-shopping-bag-48.png"
-                            class="shopping-cart"></a></li>
-
-                <a href="#" id="close"> <i class="far fa-times"></i></a>
-
-
-            </ul>
-        </nav>
+                <nav >
+           
+                    <ul id="navbar">
+                        <li><a  href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a class="active" href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a class="loginn" href="#" onclick= "visible();" >Login</a></li>
+                        <li id="lg-bag"><a href="cart.html"><img src="images/icons8-shopping-bag-48.png" class="shopping-cart"></a></li>
+        
+                        <a href="#" id="close"> <i class="far fa-times"></i></a>
+        
+        
+                    </ul>
+                </nav>
 
         <nav id="mobile">
 
@@ -45,6 +50,27 @@
 
     </header>
 
+        <!-- Login-modal -->
+        <div id="modalContainer">
+            <div id="modalContent">
+              <span id="closeModal" onclick="notVisible();">&times;</span>
+               <div class="login">
+                <div class="login-info">
+                    <Label>Email</Label>
+                    <input type="text">
+                    <Label>Password</Label>
+                    <input type="password">
+                    <input class="login-button" type="submit" value="Login">
+                    <div class="signup">
+                        <h5>Not a User <span style="color:rgb(36, 36, 221);">sign-up</span></h5>
+                    </div>
+                </div>
+                <div>
+                    <img class="login-img" src="img/signin/login.png" alt="">
+                </div>
+               </div>
+            </div>
+          </div>
     <section id="blog-header">
        
         <h2>Readmore</h2>
@@ -184,7 +210,16 @@
 
 
     </footer>
-
+    <script>
+         //Modal For LogIn and SignUp
+       function visible() {
+        document.getElementById('modalContainer').style.display = 'block';
+      };
+      
+      function notVisible()  {
+        document.getElementById('modalContainer').style.display = 'none';
+      };
+    </script>
 </body>
 
 </html>

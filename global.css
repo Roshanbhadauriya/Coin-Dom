@@ -51,7 +51,7 @@
   padding: 8px 10px;
   caret-color: rgb(98, 98, 235);
   font-size: 14px;
-  width: 320px;
+  width: 90%;
   margin-bottom: 8px;
 }
 .login-info h5{
@@ -68,6 +68,8 @@
 }
 .signup{
   margin-right: 43px;
+  display: flex;
+  justify-content: flex-start;
 }
 .signup span:hover{
   font-size: 15px;

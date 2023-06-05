@@ -24,11 +24,13 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#" onclick= "visible();" >Login</a></li>
                     <li id="lg-bag"><a href="cart.html" class="active"><img src="images/icons8-shopping-bag-48.png" class="shopping-cart"></a></li>
     
                     <a href="#" id="close"> <i class="far fa-times"></i></a>
-    
+                    <li>   <div id="coins-product" >
+                        <img src="images/coin.png"  style="width:50%;">
+                        <p id="coins"> </p>
+                    </div></li>
     
                 </ul>
             </nav>
@@ -60,7 +62,7 @@
                         <td> <a href="#"><i class="far fa-times-circle"> </i></a>
                         </td>
                         <td><img src="img/products/f4.jpg" alt=""></td>
-                        <td> Cartoon Jack Sparrow Edition</td>
+                        <td> Cartoon Jack Sparrow</td>
                         <td>RS 439</td>
                         <td> <input type="number" value="1"></td>
                         <td> RS 439</td>
@@ -86,16 +88,94 @@
                 </tbody>
             </table>
         </section>
+        <hr>
         <section id="card-add" class="section-p1">
+            <h3 style="text-align: center; font-size: 30px;">Apply Coupon</h3>
             <div id="coupon">
-                <h3>Apply Coupon</h3>
+                
                 <input type="text">
-                <input type="submit" value="Apply">
+                <button onclick="msgs();">Apply</button>
             </div>
         </section>
+        <br><br>
+        <section id="newsletter" class="section-p1">
 
-        <script src="script.js"></script>
-
+            <div class="newstext">
+                <h4>Sign Up For Newsletters</h4>
+                <p>get E-mail updates about our latest shop and <span>special offers .</span></p>
+            </div>
+    
+            <div class="form"> 
+                <input type="text" placeholder="Your email address">
+                <button class="normal" onclick="heyT();">Sign Up</button>
+            </div>
+    
+        </section>
+    
+        <footer class="section-p1">
+            <div class="col">
+                <img src="images/coin-dom-logo-zip-file/png/logo-no-background.png" class="logo f-logo" alt="Coin-Dom logo ">
+                <h4>Contact</h4>
+                <p><strong>Address: </strong>Indore</p>
+                <p><strong>Hours: </strong>10:00 - 23:00, Mon-Sat</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+    
+            <div class="col">
+                <h4>My Accountt</h4>
+                <a href="account-settings/index.html">Account</a>
+                <a href="#">View Cart </a>
+                <a href="#">My  Wishlist</a>
+                <a href="#">Track my order</a>
+                <a href="#">help </a>
+            </div>
+            
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="img/pay/app.jpg">
+                    <img src="img/pay/play.jpg">
+                </div>
+                <p>Secured Payment Gateways </p>
+                <img src="img/pay/pay.png">
+    
+            </div>
+    
+            <div class="copyright">
+                <p>All Copyright reserved©</p>
+            </div>
+    
+    
+        </footer>
+        <script src="script.js">
+           
+        </script>
+<script> function msgs(){
+    alert("Invalid Coupon!");
+}
+function heyT(){ 
+    alert("Signed Up!");
+    }</script>
     </body>
 
 </html>
