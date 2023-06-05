@@ -58,3 +58,12 @@ function increment() {
         // Store the new value in the local storage
         localStorage.setItem('coins', currentValue);
       });
+
+      //Modal For LogIn and SignUp
+       function visible() {
+        document.getElementById('modalContainer').style.display = 'block';
+      };
+      
+      function notVisible()  {
+        document.getElementById('modalContainer').style.display = 'none';
+      };

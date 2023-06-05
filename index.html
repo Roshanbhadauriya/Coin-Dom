@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoinDom</title>
     <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
     <script src="https://kit.fontawesome.com/11657db73a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     
@@ -21,7 +22,7 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html" >Login</a></li>
+                <li><a href="#" onclick= "visible();" >Login</a></li>
                 <li id="lg-bag"><a href="cart.html"><img src="images/icons8-shopping-bag-48.png" class="shopping-cart"></a></li>
 
                 <a href="#" id="close"> <i class="far fa-times"></i></a>
@@ -40,6 +41,28 @@
 
         
     </header>
+    
+    <!-- Login-modal -->
+    <div id="modalContainer">
+        <div id="modalContent">
+          <span id="closeModal" onclick="notVisible();">&times;</span>
+           <div class="login">
+            <div class="login-info">
+                <Label>Email</Label>
+                <input type="text">
+                <Label>Password</Label>
+                <input type="password">
+                <input class="login-button" type="submit" value="Login">
+                <div class="signup">
+                    <h5>Not a User <span style="color:rgb(36, 36, 221);">sign-up</span></h5>
+                </div>
+            </div>
+            <div>
+                <img class="login-img" src="img/signin/login.png" alt="">
+            </div>
+           </div>
+        </div>
+      </div>
 
 
     <section id="hero">

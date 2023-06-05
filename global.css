@@ -1,0 +1,86 @@
+#modalContainer {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+
+#modalContent {
+  background-color: #fff;
+  position: relative;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  width: 60%;
+  box-shadow: 0 0px 7px;
+  position: relative;
+  border-radius: 9px;
+}
+
+#closeModal {
+  color: #aaa;
+  position: absolute;
+  right: 4px;
+  top: 1px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#closeModal:hover {
+  color: black;
+}
+.login{
+  width: 99.5%;
+  height: 420px;
+  display: flex;
+  align-items: center;
+}
+.login-info{
+  margin-left: 20px;
+}
+.login-info input{
+  padding: 8px 10px;
+  caret-color: rgb(98, 98, 235);
+  font-size: 14px;
+  width: 320px;
+  margin-bottom: 8px;
+}
+.login-info h5{
+  float: right;
+  color: #aaa;
+  font-size: 14px;
+  margin-top: 30px;
+}
+.login-img{
+  width: 93%;
+  display: flex;
+  justify-content: end;
+  margin-right: 30px;
+}
+.signup{
+  margin-right: 43px;
+}
+.signup span:hover{
+  font-size: 15px;
+text-decoration: underline;
+cursor: pointer;
+}
+.login-button{
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 4px;
+  transition: opacity .15s;
+}
+.login-button:active{
+  opacity: .4;
+}
