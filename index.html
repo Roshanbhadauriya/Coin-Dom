@@ -11,18 +11,18 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     
 </head>
-<body>
+<body onload="checkLoginStatus();">
     <header id="header">
         <a href="/index.html"><img src="images/coin-dom-logo-zip-file/png/logo-no-background.png" class="logo" alt="coin-dom logo" ></a>
         <nav >
            
             <ul id="navbar">
                 <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
+            <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="#" onclick= "visible();" >Login</a></li>
+                <li id="login"><a href="#" onclick= "visible();" >Login</a></li>
                 <li id="lg-bag"><a href="cart.html"><img src="images/icons8-shopping-bag-48.png" class="shopping-cart"></a></li>
 
                 <a href="#" id="close"> <i class="far fa-times"></i></a>
@@ -49,10 +49,10 @@
            <div class="login">
             <div class="login-info">
                 <Label>Email</Label>
-                <input type="text">
+                <input type="text" id="email">
                 <Label>Password</Label>
-                <input type="password">
-                <input class="login-button" type="submit" value="Login">
+                <input type="password" id="password">
+                <input class="login-button" type="submit" value="Login" onclick="login();">
                 <div class="signup">
                     <h5>Not a User <span style="color:rgb(36, 36, 221);">sign-up</span></h5>
                 </div>
