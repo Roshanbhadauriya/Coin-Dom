@@ -390,8 +390,11 @@ if(close){
         subtractButton.addEventListener('click', function () {
             // Get the current value from the paragraph
             let currentValue = parseInt(coinsParagraph.textContent);
-
-            // Subtract 1 from the current value
+            if(currentValue === 0){
+                alert("Not enough coins!");
+            }
+            else{
+                  // Subtract 1 from the current value
             currentValue--;
             currentValue--;
 
@@ -400,6 +403,8 @@ if(close){
             
             // Store the new value in the local storage
             localStorage.setItem('coins', currentValue);
+            }
+          
         });
 
 
